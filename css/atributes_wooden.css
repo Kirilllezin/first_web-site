@@ -1,0 +1,23 @@
+body{
+    background-color:white;
+    height:100%;
+    width: 100%;
+    margin-left:0%;
+
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main_wooden' 
+    'footer';
+    grid-template-columns: 1fr; 
+    grid-template-rows:0.2fr 1fr 60px;
+    grid-column-gap:0px;
+    grid-row-gap:0px;
+}
+
+body >*{
+    padding:1rem;
+    border:none;
+}
+
+

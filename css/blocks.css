@@ -1,0 +1,253 @@
+  /*INDEX BLOCKS */
+  .header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr minmax(120px,0.09fr);
+    background-color:#fff;;
+    }
+
+    .back_button{
+        grid-column-start: 2;
+        text-align: left  ;
+    }
+    
+    .aside {
+    grid-area: menu;
+    border:5px outset #293133;
+    background-color:#293133;
+    text-align: center;
+    padding: 20px;
+    }
+    
+    .main {
+    display:grid;
+    border:5px solid #293133;
+    grid-area: main;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-rows: 120px repeat(2,minmax(100px,1fr));
+    background-color:white; 
+    }       
+
+    .hot_sales{
+        grid-row-start: 1;
+        grid-column: 1/3;
+        text-align: center;
+    }
+    .section_1{
+        padding:10px;
+        width: 100%;
+        grid-column-start: 1;
+        /* grid-row-start: 2; */
+        text-align: center;
+      }
+    .section_2{
+        padding:0px;
+        width: 100%;
+        grid-column-start: 2;
+        /* grid-row-start: 2; */
+        text-align: center;
+    }
+    
+    .footer{
+        display:grid;
+        grid-area: footer;
+        grid-template-areas: 
+        "copyright footer_img email";
+        grid-column: repeat(3,minmax(200px,1fr));
+        background-color: white;
+        width: auto;
+        height: auto;
+        padding:20px;
+    }
+
+    .copyright{
+        grid-area: copyright;
+        padding:0px;
+        grid-column-start:1;
+        font-size:32;
+        text-align: center;
+        width: 1fr;
+    }
+
+    .email{
+        grid-area: email;
+        padding:0px;
+        text-align: center;
+        width: 1fr;
+        /* grid-column-start: 3; */
+    }
+    
+    .footer_img{
+        grid-area:footer_img;
+        padding:0px;
+        text-align: center;
+    }
+
+
+
+
+/* AUTOHOR BLOCKS */
+.main_author{
+    display:grid;
+    grid-area:main_author;
+    text-align: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(2,1fr);
+    grid-column-start: 1;
+    border:5px outset #293133;
+ }
+ 
+ .vk_author{
+     grid-area:vk;
+     grid-column-start: 2;
+     grid-row-start: 1;
+     width: 50%;
+     height: 18%;
+     padding: 50px;
+     text-align: center;
+ }
+ 
+ .instagram_author{
+     grid-area:instagram;
+     grid-column-start: 2;
+     grid-row-start:1;
+     text-align: center;  
+     padding: 2px;
+     
+ }
+ 
+ .telegram_author{
+     grid-area:telegram;
+     grid-column-start: 2;
+     grid-row-start:3;
+     text-align: center;
+     padding: 20px;
+ }
+
+
+
+
+/* PLASTIC BLOCKS */
+    .main_plastic {
+    display:grid;
+    border:5px outset #293133;
+    grid-area: main_plastic;
+    grid-column: repeat(2,1fr);
+    background-color:white;
+    }
+
+    .section_1_plastic{
+        padding:10px;
+        width: 100%;
+        grid-column-start: 1;
+        text-align: center;
+      }
+
+    .section_2_plastic{
+        padding:0px;
+        width: 100%;
+        grid-column-start: 2;
+        text-align: center;
+    }
+    
+
+
+
+    /* WOODEN BLOCKS */
+    .main_plastic {
+        display:grid;
+        border:5px outset #293133;
+        grid-area: main_plastic;
+        grid-column: repeat(2,1fr);
+        background-color:white; 
+        }
+    
+        .section_1_wooden{
+            padding:10px;
+            width: 100%;
+            grid-column-start: 1;
+            text-align: center;
+          }
+    
+        .section_2_wooden{
+            padding:0px;
+            width: 100%;
+            grid-column-start: 2;
+            text-align: center;
+        }
+        
+
+        
+/* CONTACTS BLOCKS */
+.main_contacts{
+    display:grid;
+    grid-area:main_contacts;
+    text-align: center;
+    grid-template-rows: 1fr 0.2fr;
+    grid-template-columns: repeat(2,1fr);   
+ }
+
+ .maps{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding:20px;
+    width: 100%;
+ }
+
+ .mail_telephone{
+    padding: 10px;
+    text-align: center;
+    grid-row-start: 2;
+ }
+
+ .work_clocks{
+    padding:25px;
+    text-align: center;
+    grid-row-start: 2;
+    grid-column-start: 2;
+ }
+
+ /* COMPANY BLOCKS */
+
+ .main_company{
+    display:grid;
+    grid-area:main_company;
+    grid-template-columns: repeat(2,1fr);
+ }
+
+ .company_photo{    
+    grid-column-start: 1;
+    padding: 10px;
+    text-align: center;
+ }
+ .company_discription{
+    grid-column-start: 2;
+    padding:20px;
+    border: 5px inset #293133;
+    /* text-align: center; */
+ }
+
+
+ /* ALUMINIUM BLOCKS */
+ .main_aluminium {
+    display:grid;
+    border:5px outset #293133;
+    grid-area: main_plastic;
+    grid-column: repeat(2,1fr);
+    background-color:white;
+    }
+
+    .section_1_aluminium{
+        padding:10px;
+        width: 100%;
+        grid-column-start: 1;
+        text-align: center;
+      }
+
+    .section_2_aluminium{
+        padding:0px;
+        width: 100%;
+        grid-column-start: 2;
+        text-align: center;
+    }
+ 
